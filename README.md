@@ -2,7 +2,8 @@
 A collection of simple C++ Drivers. Currently, there is only one driver for humidity... Gotta start somewhere I guess.
 
 ## Drivers
- - ST [HTS221]((./libHumidity/include/Hts221.h)) - Humidity and Temperature sensor I2C driver
+ - [ST HTS221](https://www.st.com/content/ccc/resource/technical/document/datasheet/4d/9a/9c/ad/25/07/42/34/DM00116291.pdf/files/DM00116291.pdf/jcr:content/translations/en.DM00116291.pdf) - Humidity and Temperature sensor I2C driver
+     - Source Code: [Hts221.h](./libHumidity/include/Hts221.h)
 
 ## Feature Highlights
  - Driver is Hardware/Architecture agnostic
