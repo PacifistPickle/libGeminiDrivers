@@ -174,7 +174,7 @@ bool Hts221::readTempRegs(float & degC)
         return false;
     }
 
-    uint16_t T_OUT = ((tempOutH << 8) | tempOutL);
+    int16_t T_OUT = ((tempOutH << 8) | tempOutL);
 
     degC = (float)_T0_DEGC_X8 / 8.0 + (T_OUT - _T0_out) * (_T1_DEGC_X8 - _T0_DEGC_X8) / 8.0 / (_T1_out - _T0_out);
     return true;
